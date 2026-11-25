@@ -25,6 +25,7 @@ import MyElderly from "./Pages/Caregiver/MyElderly";
 import Visits from "./Pages/Caregiver/Visits";
 import Profile from "./Pages/Caregiver/Profile";
 
+
 // Elderly 
 import ElderlyLayout from "./Pages/Elderly/ElderlyLayout";
 
@@ -67,13 +68,13 @@ function App() {
         path="/caregiver"
         element={<Navigate to="/caregiver/dashboard" replace />}
       />
-
+      
       <Route path="/caregiver/dashboard" element={<Dashboard />} />
       <Route path="/caregiver/schedule" element={<CareSchedule />} />
       <Route path="/caregiver/my-elderly" element={<MyElderly />} />
       <Route path="/caregiver/visits" element={<Visits />} />
       <Route path="/caregiver/profile" element={<Profile />} />
-
+ 
       {/* ELDERLY  */}
       <Route path="/elderly" element={<ElderlyLayout />}>
         <Route index element={<Navigate to="dashboard" replace />} />
